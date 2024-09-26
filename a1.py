@@ -1,9 +1,4 @@
-"""
-TODO
-    - remove the hello name
-    - configure the course total: add the remaining numbers, inputs etc..
 
-"""
 Labs = int(input("Enter the number of labs completed: "))
 if Labs > 6:
     Labs = 6
