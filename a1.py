@@ -24,11 +24,8 @@ Final_Exam_Grade = (F_E * 0.18)
 
 M_F_Prep = float(input("Enter grade for Midterms and Final Preperation: "))
 Midterms_Final_Prep_Grade = (M_F_Prep * 0.06)
+ 
+grades =((Lab_grade) + (Quizzes_grade) + (Assignment_grade) + (Midterm_grade) + (Final_Exam_Grade) + (Midterms_Final_Prep_Grade))
 
-def grade_total(grades):
- grades =(Labs + Quizzes + Assignment_grade + Midterm_grade + Midterms_Final_Prep_Grade)
-
-print("Your grade is: " + str(round((Lab_grade)+(Quizzes_grade)+(Assignment_grade)+(Midterm_grade)+(Final_Exam_Grade)+(Midterms_Final_Prep_Grade))))
-
-
+print("Your grade is: " + str(round(grades)))
 
