@@ -4,17 +4,15 @@ TODO
     - configure the course total: add the remaining numbers, inputs etc..
 
 """
-Labs = int(input("Enter the number of labs completed"))
+Labs = int(input("Enter the number of labs completed: "))
 if Labs > 6:
     Labs = 6
-lab_weight = 0.2
+Lab_grade = ((Labs/6 * 0.20)*100)
 
-
-Quizzes = int(input("Enter the number of quizzes completed"))
+Quizzes = int(input("Enter the number of quizzes completed: "))
 if Quizzes > 6:
     Quizzes = 6
-lab_weight = 0.15
-
+Quizzes_grade = ((Quizzes/6 * 0.15) * 100)
 
 A_1 = float(input("Enter grade for Assigmnent 1: "))
 A_2 = float(input("Enter grade for Assignment 2: "))
@@ -42,5 +40,5 @@ def grade_total(grades):
 
  
 
-print("Your grade is: " + str((((Labs/6 * 0.20)*100))+(((Quizzes/6 * 0.15)*100)) + (((A_1 + A_2 + A_3 + A_4)*0.04)) + ((M_1 * 0.125) + (M_2 * 0.125)) + ((F_E * 0.18))  + ((M_F_Prep * 0.06)))) 
+print("Your grade is: " + str(round((((Labs/6 * 0.20)*100))+(((Quizzes/6 * 0.15)*100)) + (((A_1 + A_2 + A_3 + A_4)*0.04)) + ((M_1 * 0.125) + (M_2 * 0.125)) + ((F_E * 0.18))  + ((M_F_Prep * 0.06))))) 
 
