@@ -27,5 +27,5 @@ Midterms_Final_Prep_Grade = (M_F_Prep * 0.06)
  
 grades =((Lab_grade) + (Quizzes_grade) + (Assignment_grade) + (Midterm_grade) + (Final_Exam_Grade) + (Midterms_Final_Prep_Grade))
 
-print("Your grade is: " + str(round(grades)))
+print("Your grade is: " + str(round(grades,2)))
 
